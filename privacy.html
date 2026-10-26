@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · Tech Pack Maker</title>
+<meta name="description" content="What Tech Pack Maker stores, where, and what it does with your Google data.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><a class="name" href="./">Tech Pack Maker</a><nav><a href="./">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav></header>
+<h1>Privacy policy</h1>
+<p class="note">Last updated 26 October 2026.</p>
+<p>Tech Pack Maker is a private tool for writing garment tech packs, run by the owner of sevenoaksfashion.com for invited users only. This policy says what it stores, where, and what it does with data from your Google account.</p>
+<h2>What we collect</h2>
+<ul>
+<li><strong>Your Google account's email address,</strong> when you sign in through Google. It's used to check that your account is allowed in, and it's recorded beside each slide you approve (for example, "approved by you@example.com").</li>
+<li><strong>What you put into the app:</strong> each pack's garment details (descriptions, construction, fabric, colourways, measurements, labels, bill of materials and costs), the artwork you upload, your slide approvals and notes, and checkpoints of the pack.</li>
+<li><strong>What the app makes from it:</strong> the PowerPoint decks it builds, and each deck's validation report.</li>
+</ul>
+<p>The app uses no advertising, analytics or tracking. The only cookie is Google's sign-in cookie, which keeps you signed in. Your browser also remembers whether you left the validation report open, on your device only.</p>
+<h2>Where it's stored</h2>
+<ul>
+<li>Packs, artwork and built decks are stored in a private Google Cloud Storage bucket in London (Google Cloud region <code>europe-west2</code>), which only the app and its owner can read.</li>
+<li>When a file is replaced or deleted, its earlier version is kept for 90 days, so mistakes can be undone.</li>
+<li>While a deck is being built, a working copy of the pack is made on the app's server and deleted when the build ends.</li>
+<li>Every Monday a backup of the whole bucket is saved as a zip to the owner's Google Drive, in a <em>Tech Pack Maker backups</em> folder. The newest 8 are kept; older ones go to Drive's bin, which empties itself after 30 days.</li>
+<li>Service logs are kept in Google Cloud Logging, as Google's standard retention allows.</li>
+</ul>
+<h2>Google Drive</h2>
+<ul>
+<li>The app connects to one Google Drive: its owner's. Signing in doesn't give it access to your Drive.</li>
+<li>It asks for Google's <code>drive.file</code> permission, which only reaches files and folders the app itself creates. It can't see, read or change anything else in the Drive.</li>
+<li>It writes there in two cases: each deck it builds is copied into a <em>Tech Pack Maker</em> folder, and the weekly backup goes into <em>Tech Pack Maker backups</em>. It reads back only what it wrote, to check the copy, and moves backups older than the newest 8 to the bin.</li>
+<li>The access Google grants is stored encrypted in Google Cloud Secret Manager, readable only by the app and its backup job, and is used for nothing else.</li>
+<li>The owner can remove the app's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Files already saved stay in the Drive.</li>
+</ul>
+<p>Tech Pack Maker's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Data from Google accounts is used only to sign you in and to save the decks and backups described above; it isn't used for advertising, isn't sold, and isn't transferred to anyone else.</p>
+<h2>Who it's shared with</h2>
+<p>Nobody. Your data isn't sold or shared. It's processed by Google Cloud, which hosts the app, under Google's terms. When you generate a Pattern Overview page from the pattern repository, the app asks the owner's own pattern service, also on Google Cloud in London, for the pattern's pages.</p>
+<h2>Deleting your data</h2>
+<p>To have a pack, or everything about you, removed, contact the owner below. Earlier versions are removed after 90 days, and weekly backups after 8 weeks plus Drive's 30-day bin.</p>
+<h2>Contact</h2>
+<p>Questions or requests about your data: <a href="mailto:darshkhosla95@gmail.com">darshkhosla95@gmail.com</a>.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the date above is updated.</p>
+<footer>Tech Pack Maker · techpacks.sevenoaksfashion.com · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></footer>
+</main>
+</body>
+</html>
